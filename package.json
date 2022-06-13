@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
-    "format": "prettier \"src/**/*.{js,jsx,ts,tsxcss,scss}\" --write",
+    "format": "prettier \"src/**/*.{js,jsx,ts,tsx,css,scss}\" --write",
     "compile": "tsc",
     "preview": "vite preview",
     "prepare": "husky install"
