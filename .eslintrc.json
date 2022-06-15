@@ -33,6 +33,7 @@
       {
         "endOfLine": "auto"
       }
-    ]
+    ],
+    "react/default-props-match-prop-types": "off"
   }
 }

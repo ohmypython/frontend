@@ -6,6 +6,8 @@ export const colors = {
   },
   text: {
     primary: 'gray.700',
+    secondary: 'teal.300',
+    tertiary: 'gray.400',
     white: 'white',
   },
 };
