@@ -3,11 +3,11 @@ import React from 'react';
 import { colors } from '../utils/colors';
 import { BoxIconProps } from '../utils/types';
 
-export const BoxIcon: React.FC<BoxIconProps> = ({ children, selected }) => {
+export const BoxIcon: React.FC<BoxIconProps> = ({ children, selected, sizeBox, sizeIcon }) => {
   return (
     <Box
-      w="30px"
-      h="30px"
+      w={sizeBox}
+      h={sizeBox}
       borderRadius="xl"
       display="flex"
       justifyContent="center"
@@ -15,6 +15,7 @@ export const BoxIcon: React.FC<BoxIconProps> = ({ children, selected }) => {
       bgColor={selected ? colors.bg.primary : colors.bg.white}
       color={selected ? colors.text.white : colors.text.secondary}
       shadow={selected ? 'none' : 'sm'}
+      fontSize={sizeIcon}
     >
       {children}
     </Box>
@@ -23,4 +24,6 @@ export const BoxIcon: React.FC<BoxIconProps> = ({ children, selected }) => {
 
 BoxIcon.defaultProps = {
   selected: true,
+  sizeBox: '30px',
+  sizeIcon: '15px',
 };

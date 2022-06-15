@@ -8,6 +8,7 @@ export const colors = {
     primary: 'gray.700',
     secondary: 'teal.300',
     tertiary: 'gray.400',
+    green: 'green.400',
     white: 'white',
   },
 };
